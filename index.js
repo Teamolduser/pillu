@@ -148,20 +148,35 @@ A17.ev.on('group-participants.update', async (anu) => {
             
                 if (anu.action == 'add') {
                 let WAuserName = num
-                A17text = `
-Hello @${WAuserName.split("@")[0]},
+                const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
+	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+	            const xmembers = metadata.participants.length
+                A17text = `╭───═[ 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 ]═───⋆
+│╭───────────────···
+┴│▸ 𝐡𝐢𝐢 𝐢𝐚𝐦 𝐠𝐡𝐨𝐬𝐭
+⬡│▸🌚𝐇𝐞𝐥𝐥𝐨 @${WAuserName.split("@")[0]},
+⬡│▸𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
+⬡│▸${metadata.subject}.
+⬡│▸𝗠𝗲𝗺𝗯𝗲𝗿 : 
+⬡│▸${xmembers}th
+⬡│▸${xdate} 
+⬡│▸${xtime}
+⬡│▸ 
+ ╰────────────────··· 
+ dont forgate to read 𝘎𝘳𝘰𝘶𝘱 𝘥𝘦𝘴𝘤𝘳𝘪𝘱𝘵𝘪𝘰𝘯
 
-I am *A17 Bot*, Welcome to ${metadata.subject}.
-
-*Group Description:*
-${metadata.desc}
 `
-
+let buttons = [
+{buttonId: `menu`, buttonText: {displayText: 'welcome'}, type: 1},
+{buttonId: `.description`, buttonText: {displayText: '𝘎𝘳𝘰𝘶𝘱 𝘥𝘦𝘴𝘤𝘳𝘪𝘱𝘵𝘪𝘰𝘯 🧾'}, type: 2},
+//{buttonId: `.remove`, buttonText: {displayText: '𝚛𝚎𝚖𝚘𝚟𝚎 𝚖𝚎😑'}, type: 1}
+]
     let buttonMessage = {
     image: await getBuffer(ppgroup),
     mentions: [num],
     caption: A17text,
     footer: `${global.BotName}`,
+    buttons: buttons,
     headerType: 4,
     }
 A17.sendMessage(anu.id, buttonMessage)
@@ -169,15 +184,26 @@ A17.sendMessage(anu.id, buttonMessage)
                 	let WAuserName = num
                     A17text = `
 Okay Bye 👋, @${WAuserName.split("@")[0]},
-
-I hope you will come back soon, but You will be missed!
+╭━━╮
+┃╭╮┃
+┃╰╯╰┳╮╱╭┳━━╮
+┃╭━╮┃┃╱┃┃┃━┫
+┃╰━╯┃╰━╯┃┃━┫
+╰━━━┻━╮╭┻━━╯
+╱╱╱╱╭━╯┃
+╱╱╱╱╰━━╯
 `
-
+let buttons = [
+//{buttonId: `.menu`, buttonText: {displayText: '𝘔𝘦𝘯𝘶 🍓'}, type: 1},
+{buttonId: `nikal`, buttonText: {displayText: '🔥𝚗𝚒𝚔𝚊𝚕🔥'}, type: 2},
+{buttonId: `.rating`, buttonText: {displayText: '𝚛𝚊𝚝𝚎 𝚖𝚢 𝚋𝚘𝚝'}, type: 1}
+]
     let buttonMessage = {
 	image:await getBuffer(ppuser),
     mentions: [num],
     caption: A17text,
     footer: `${global.BotName}`,
+    buttons: buttons,
     headerType: 4,
     
     }
