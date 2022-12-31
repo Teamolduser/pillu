@@ -4052,24 +4052,23 @@ case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
  }
  break
 
- case 'ytad': {
+  case 'ytad': {
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     const YT=require('./lib/ytdlcore')
-    let yts = require("yt-search")
+    let yts = require("@adiwajshing/keyed-db2")
     let search = await yts(text)
     let anu = search.videos[0]
     const ytmp3play = await YT.mp3(anu.url)
     
  await A17.sendMessage(from, {document: fs.readFileSync(ytmp3play.path),fileName: anu.title + '.mp3',mimetype: 'audio/mpeg',}, {quoted:m})
  }
- break
-
+ break 
  case 'ytvd': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
  const YT=require('./lib/ytdlcore')
-    let yts = require("yt-search")
+    let yts = require("@adiwajshing/keyed-db2")
     let search = await yts(text)
     let anu = search.videos[0]
     const ytmp4play = await YT.mp4(anu.url)
@@ -4086,20 +4085,18 @@ case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
 
  const YT=require('./lib/ytdlcore')
  if(!text) return A17.sendMessage(from,{text:"Please provide a valid youtube link!"},{quoted:m})
- let yts = require("yt-search")
+ let yts = require("@adiwajshing/keyed-db2")
  let search = await yts(text)
  let anu = search.videos[0]
  let buttons = [
- {buttonId: `.ytad2 ${text}`, buttonText: {displayText: '♫ Audio'}, type: 1},
- {buttonId: `.ytvd2 ${text}`, buttonText: {displayText: '► Video'}, type: 1}
+ {buttonId: `${prefix}ytad2 ${text}`, buttonText: {displayText: '♫ Audio'}, type: 1},
+ {buttonId: `${prefix}ytvd2 ${text}`, buttonText: {displayText: '► Video'}, type: 1}
 
  ]
  let buttonMessage = {
  image: { url: anu.thumbnail },
- caption: `「   Youtube Downloader 2.0  」
-
+ caption: `「  A17 Youtube Downloader 2.0  」
 *Title :* ${anu.title}
-
 *Duration :* ${anu.timestamp}
 *Viewers :* ${anu.views}
 *Uploaded :* ${anu.ago}
@@ -4112,10 +4109,10 @@ case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
  }
  A17.sendMessage(m.chat, buttonMessage, { quoted: m })
  }
- break
+ break 
 
 
- case 'ytad2': {
+  case 'ytad2': {
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     const YT=require('./lib/ytdlcore')
@@ -4133,6 +4130,7 @@ case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
  A17.sendMessage(from, {video:{url:ytmp4play2.videoUrl}, mimetype:"video/mp4", caption:'Downloaded by *A17 MD*',}, {quoted:m})
  }
  break
+
 
 
 
