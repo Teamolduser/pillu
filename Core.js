@@ -4019,7 +4019,6 @@ break
 
 
               
-
 case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
@@ -4027,20 +4026,18 @@ case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
  const { isUrl, fetchBuffer } = require('./lib/Function')
 
  if(!text) return A17.sendMessage(from,{text:"Pls enter song name to play!"},{quoted:m})
- let yts = require("yt-search")
+ let yts = require("@adiwajshing/keyed-db2")
  let search = await yts(text)
  let anu = search.videos[0]
  let buttons = [
- {buttonId: `.ytad ${text}`, buttonText: {displayText: '♫ Audio'}, type: 1},
- {buttonId: `.ytvd ${text}`, buttonText: {displayText: '► Video'}, type: 1}
+ {buttonId: `${prefix}ytad ${text}`, buttonText: {displayText: '♫ Audio'}, type: 1},
+ {buttonId: `${prefix}ytvd ${text}`, buttonText: {displayText: '► Video'}, type: 1}
 
  ]
  let buttonMessage = {
  image: { url: anu.thumbnail },
- caption: `「  _Youtube Player 2.0_  」
-
+ caption: `「  _ Youtube Player 2.0_  」
 *Title :* ${anu.title}
-
 *Duration :* ${anu.timestamp}
 *Viewers :* ${anu.views}
 *Uploaded :* ${anu.ago}
