@@ -3313,50 +3313,36 @@ Type *surrender* to surrender and admit defeat`
      await A17.groupParticipantsUpdate(m.chat, [users], 'remove')
      }
      break
+	
+ case 'rating':{
+                if (isBan) return reply(mess.ban)
+             if (isBanChat) return reply(mess.banChat)
+                     let jawab = `‎ ‎ ‎ ‎ ‎ `
+                     let buttons = [
+         {buttonId: `${prefix}rate2`, buttonText: {displayText: '☆☆☆☆☆☆'}, type: 1},
+         {buttonId: `${prefix}rate2`, buttonText: {displayText: '☆☆☆☆'}, type: 1},
+         {buttonId: `${prefix}rate2`, buttonText: {displayText: '☆☆☆'}, type: 1}
+         ]
+         await A17.sendButtonText(m.chat, buttons, jawab, pushname, m)
+                     }
+                     case 'rating':{
+             //   if (isBan) return reply(mess.ban)
+          //  if (isBanChat) return reply(mess.banChat
+                     let jawab = `‎ ‎ ‎ ‎ ‎ `
+                     let buttons = [
+         {buttonId: `${prefix}rate2`, buttonText: {displayText: '☆☆'}, type: 1},
+         {buttonId: `${prefix}rate2`, buttonText: {displayText: '☆'}, type: 1},
+         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1}
+         ]
+                             await A17.sendButtonText(m.chat, buttons, jawab,)
+                     }
+                     break
 		
- case  'rating' : {
-    if (isBan) return reply(mess.banned)	 			
-        if (isBanChat) return reply(mess.bangc)
-    let sections = []
-    let  nexusmenu = [`rate2`,`rate2`,`rate2`,`rate2`,`rate2`,`rate2`,`rate2`]
-    let marin2 = [`☆ `,`☆☆ `,`☆☆☆ `,`☆☆☆☆ `,`☆☆☆☆☆`,`☆☆☆☆☆☆`,`☆☆☆☆☆☆☆ `]
-    let ne = [` thik tha bot`,`accha laga bot`,`kdk bro `,`nice bro `,`like it`,`tera bhi sahi hai`,`Dil jit lia `]
-    let startnum = 0; let startnu = 0; let startn = 0;let start = 0
-                let startnumm = 1
-                for (let x of nexusmenu) {
-                    const yy = {title: `${marin2[startnum++]}`,
-                rows: [
-                   {
-                    title: `${marin2[startnu++]}`,
-                   // description: `${ne[0]}`,
-                    rowId: `${prefix}${x}`
-                  }
-                ]
-               }
-                    sections.push(yy)
-                }
-                const sendm =  A17.sendMessage(
-  from, 
-  {
-   text: "rate",
-   footer: `${BotName}`,
-   title: "CHECK THE ......",
-   title: `
-
-hey 🥵 User name:${pushname}
-please rate me 
-
-`,
-   buttonText: "Click Button",
-   sections
-  }, { quoted : m }
-)  
-}
-
-break
-case 'rate5': case 'rate2':
+		
+		
+ case 'rate5': case 'rate2':
     
-    reply(`${pushname}thanks:\n\n for rating baby`)
+    reply(`${pushname}thanks for rating`)
     break
 
 case 'rate':
@@ -6092,6 +6078,63 @@ if (isBanChat) return reply(mess.bangc)
 
 )}
 break
+		
+case 'ko':{
+                if (isBan) return reply(mess.ban)
+             if (isBanChat) return reply(mess.banChat)
+                     let jawab = `‎ ‎ ‎ ‎ ‎ `
+                     let buttons = [
+         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1},
+         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1},
+         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1}
+         ]
+         await A17.sendButtonText(m.chat, buttons, jawab, pushname, m)
+                     }
+                     case 'ko':{
+             //   if (isBan) return reply(mess.ban)
+          //  if (isBanChat) return reply(mess.banChat
+                     let jawab = `‎ ‎ ‎ ‎ ‎ `
+                     let buttons = [
+         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1},
+         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1},
+         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1}
+         ]
+                             await A17.sendButtonText(m.chat, buttons, jawab,)
+                     }
+                     
+                     case 'ko':{
+                        if (isBan) return reply(mess.ban)
+                  //if (isBanChat) return reply(mess.banChat
+                             let jawab = `‎ ‎ ‎ ‎ ‎ `
+                             let buttons2 = [
+                 {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳 '}, type: 1},
+                 {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1},
+                 {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1}
+                 ]
+                                     await A17.sendButtonText(m.chat, buttons2, jawab,)
+                             }
+
+                             
+                             case 'ko':{
+                                if (isBan) return reply(mess.ban)
+                          //if (isBanChat) return reply(mess.banChat
+                                     let jawab = `‎ ‎ ‎ ‎ ‎ `
+                                     let buttons2 = [
+                         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳 '}, type: 1},
+                         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1},
+                         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1}
+                         ]
+                                             await A17.sendButtonText(m.chat, buttons2, jawab,)
+                                     }
+        
+                            
+break
+
+		
+		
+		
+		
+		
 case 'meo':{
 if (isBan) return reply(mess.ban)
 let buttons = [
