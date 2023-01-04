@@ -6093,7 +6093,7 @@ if (isBanChat) return reply(mess.bangc)
 )}
 break
 case 'meo':{
-lif (isBan) return reply(mess.ban)
+if (isBan) return reply(mess.ban)
 let buttons = [
 {buttonId: `${prefix}animemenu`, buttonText: {displayText: '𝐀𝐍𝐈𝐌𝐄 𝐌𝐄𝐍𝐔 '}, type: 1},
 {buttonId: `${prefix}groupmenu`, buttonText: {displayText: '𝐎𝐍𝐋𝐘 𝐅𝐎𝐑 𝐆𝐑𝐎𝐔𝐏𝐀𝐃𝐌𝐈𝐍𝐒'}, type: 1},
