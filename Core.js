@@ -6092,6 +6092,63 @@ if (isBanChat) return reply(mess.bangc)
 
 )}
 break
+		
+case 'ko':{
+                if (isBan) return reply(mess.ban)
+             if (isBanChat) return reply(mess.banChat)
+                     let jawab = `‎ ‎ ‎ ‎ ‎ `
+                     let buttons = [
+         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1},
+         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1},
+         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1}
+         ]
+         await A17.sendButtonText(m.chat, buttons, jawab, pushname, m)
+                     }
+                     case 'ko':{
+             //   if (isBan) return reply(mess.ban)
+          //  if (isBanChat) return reply(mess.banChat
+                     let jawab = `‎ ‎ ‎ ‎ ‎ `
+                     let buttons = [
+         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1},
+         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1},
+         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1}
+         ]
+                             await A17.sendButtonText(m.chat, buttons, jawab,)
+                     }
+                     
+                     case 'ko':{
+                        if (isBan) return reply(mess.ban)
+                  //if (isBanChat) return reply(mess.banChat
+                             let jawab = `‎ ‎ ‎ ‎ ‎ `
+                             let buttons2 = [
+                 {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳 '}, type: 1},
+                 {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1},
+                 {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1}
+                 ]
+                                     await A17.sendButtonText(m.chat, buttons2, jawab,)
+                             }
+
+                             
+                             case 'ko':{
+                                if (isBan) return reply(mess.ban)
+                          //if (isBanChat) return reply(mess.banChat
+                                     let jawab = `‎ ‎ ‎ ‎ ‎ `
+                                     let buttons2 = [
+                         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳 '}, type: 1},
+                         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1},
+                         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1}
+                         ]
+                                             await A17.sendButtonText(m.chat, buttons2, jawab,)
+                                     }
+        
+                            
+break
+
+		
+		
+		
+		
+		
 case 'meo':{
 if (isBan) return reply(mess.ban)
 let buttons = [
