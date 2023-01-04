@@ -6092,67 +6092,24 @@ if (isBanChat) return reply(mess.bangc)
 
 )}
 break
-		
-		
-  case 'meo':{
-                if (isBan) return reply(mess.ban)
-             if (isBanChat) return reply(mess.banChat)
-                     let jawab = `‎ ‎ ‎ ‎ ‎ `
-                     let buttons = [
-                        {buttonId: `${prefix}animemenu`, buttonText: {displayText: '𝐀𝐍𝐈𝐌𝐄 𝐌𝐄𝐍𝐔 '}, type: 1},
-                        {buttonId: `${prefix}groupmenu`, buttonText: {displayText: '𝐎𝐍𝐋𝐘 𝐅𝐎𝐑 𝐆𝐑𝐎𝐔𝐏𝐀𝐃𝐌𝐈𝐍𝐒'}, type: 1},
-                        {buttonId: `${prefix}groupsetting`, buttonText: {displayText: 'groupsetting'}, type: 1}
-                        ]
-                             await A17.sendButtonText(m.chat, buttons, jawab, pushname, m)
-                     }
-                     case 'meo':{
-                        if (isBan) return reply(mess.ban)
-                  //   if (isBanChat) return reply(mess.banChat
-                             let jawab = `‎ ‎ ‎ ‎ ‎ `
-                             let buttons = [
-                                {buttonId: `${prefix}animemenu`, buttonText: {displayText: '𝐀𝐍𝐈𝐌𝐄 𝐌𝐄𝐍𝐔 '}, type: 1},
-                                {buttonId: `${prefix}groupmenu`, buttonText: {displayText: '𝐎𝐍𝐋𝐘 𝐅𝐎𝐑 𝐆𝐑𝐎𝐔𝐏𝐀𝐃𝐌𝐈𝐍𝐒'}, type: 1},
-                                {buttonId: `${prefix}groupsetting`, buttonText: {displayText: 'groupsetting'}, type: 1}
-                                ]
-                                     await A17.sendButtonText(m.chat, buttons, jawab, pushname, m)
-                             }
-                     
-                     case 'meo':{
-                        if (isBan) return reply(mess.ban)
-                  // if (isBanChat) return reply(mess.banChat
-                             let jawab = `‎ ‎ ‎ ‎ ‎ `
-                             let buttons = [
-                                {buttonId: `${prefix}allmenu`, buttonText: {displayText: 'all manu'}, type: 1},
-                                {buttonId: `${prefix}nsfw`, buttonText: {displayText: 'nsfw'}, type: 1},
-                                {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳 𝘰𝘧 𝘵𝘩𝘪𝘴 𝘴𝘦𝘹𝘺 𝘽𝙤𝙩😚'}, type: 1}
-                                ]
-                                     await A17.sendButtonText(m.chat, buttons, jawab, pushname)
-                             }
-                             case 'meo':{
-                                if (isBan) return reply(mess.ban)
-                          // if (isBanChat) return reply(mess.banChat
-                                     let jawab = `‎ ‎ ‎ ‎ ‎ `
-                                     let buttons = [
-                                        {buttonId: `${prefix}textpromenu`, buttonText: {displayText: '𝐓𝐗𝐓-𝐈𝐌𝐆-𝐌𝐀𝐊𝐄𝐑 𝐌𝐄𝐍𝐔'}, type: 1},
-                                        {buttonId: `${prefix}downloadmenu`, buttonText: {displayText: '𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐌𝐄𝐍𝐔'}, type: 1},
-                                        {buttonId: `${prefix}voicechangermenu`, buttonText: {displayText: '𝐂𝐇𝐀𝐍𝐆𝐄 𝐕𝐎𝐈𝐂𝐄'}, type: 1}
-                                        ]
-                                             await A17.sendButtonText(m.chat, buttons, jawab, pushname)
-                                     }
-                                     break
-          		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
+case 'meo':{
+lif (isBan) return reply(mess.ban)
+let buttons = [
+{buttonId: `${prefix}animemenu`, buttonText: {displayText: '𝐀𝐍𝐈𝐌𝐄 𝐌𝐄𝐍𝐔 '}, type: 1},
+{buttonId: `${prefix}groupmenu`, buttonText: {displayText: '𝐎𝐍𝐋𝐘 𝐅𝐎𝐑 𝐆𝐑𝐎𝐔𝐏𝐀𝐃𝐌𝐈𝐍𝐒'}, type: 1},
+{buttonId: `${prefix}groupsetting`, buttonText: {displayText: 'groupsetting'}, type: 1}
+]
+let buttons2 = [
+{buttonId: `${prefix}allmenu`, buttonText: {displayText: 'all manu'}, type: 1},
+{buttonId: `${prefix}nsfw`, buttonText: {displayText: 'nsfw'}, type: 1},
+{buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳 𝘰𝘧 𝘵𝘩𝘪𝘴 𝘴𝘦𝘹𝘺 𝘽𝙤𝙩😚'}, type: 1}]
+let buttons3 = [
+{buttonId: `${prefix}textpromenu`, buttonText: {displayText: '𝐓𝐗𝐓-𝐈𝐌𝐆-𝐌𝐀𝐊𝐄𝐑 𝐌𝐄𝐍𝐔'}, type: 1},
+{buttonId: `${prefix}downloadmenu`, buttonText: {displayText: '𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐌𝐄𝐍𝐔'}, type: 1},
+{buttonId: `${prefix}voicechangermenu`, buttonText: {displayText: '𝐂𝐇𝐀𝐍𝐆𝐄 𝐕𝐎𝐈𝐂𝐄'}, type: 1}]
+await A17.sendButtonText(m.chat, buttons, buttons2, buttons3, pushnam)
+}
+break
 case 'allmenu':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
