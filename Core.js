@@ -3314,29 +3314,35 @@ Type *surrender* to surrender and admit defeat`
      }
      break
 	
- case 'rating':{
-                if (isBan) return reply(mess.ban)
-             if (isBanChat) return reply(mess.banChat)
-                     let jawab = `‎ ‎ ‎ ‎ ‎ `
-                     let buttons = [
-         {buttonId: `${prefix}rate2`, buttonText: {displayText: '☆☆☆☆☆☆'}, type: 1},
-         {buttonId: `${prefix}rate2`, buttonText: {displayText: '☆☆☆☆'}, type: 1},
-         {buttonId: `${prefix}rate2`, buttonText: {displayText: '☆☆☆'}, type: 1}
-         ]
-         await A17.sendButtonText(m.chat, buttons, jawab, pushname, m)
-                     }
-                     case 'rating':{
-             //   if (isBan) return reply(mess.ban)
-          //  if (isBanChat) return reply(mess.banChat
-                     let jawab = `‎ ‎ ‎ ‎ ‎ `
-                     let buttons = [
-         {buttonId: `${prefix}rate2`, buttonText: {displayText: '☆☆'}, type: 1},
-         {buttonId: `${prefix}rate2`, buttonText: {displayText: '☆'}, type: 1},
-         {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1}
-         ]
-                             await A17.sendButtonText(m.chat, buttons, jawab,)
-                     }
-                     break
+		
+     case 'rating':{
+        if (isBan) return reply(mess.ban)
+     if (isBanChat) return reply(mess.banChat)
+             let jawab = `‎ ‎ ‎ ‎ ‎ `
+             await sleep (1)
+             let buttons = [
+ {buttonId: `${prefix}rate2`, buttonText: {displayText: '☆☆☆☆☆☆'}, type: 1},
+ {buttonId: `${prefix}rate2`, buttonText: {displayText: '☆☆☆☆'}, type: 1},
+ {buttonId: `${prefix}rate2`, buttonText: {displayText: '☆☆☆'}, type: 1}
+ ]
+ await A17.sendButtonText(m.chat, buttons, jawab, pushname, m)
+             }
+
+             
+             case 'rating':{
+        if (isBan) return reply(mess.ban)
+ //   if (isBanChat) return reply(mess.banChat
+             let jawab = `‎ ‎ ‎ ‎ ‎ `
+             await sleep (50)
+             let buttons = [
+ {buttonId: `${prefix}rate2`, buttonText: {displayText: '☆☆'}, type: 1},
+ {buttonId: `${prefix}rate2`, buttonText: {displayText: '☆'}, type: 1},
+ {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳'}, type: 1}
+ ]
+                     await A17.sendButtonText(m.chat, buttons, jawab,)
+             }
+                  break
+		
 		
 		
 		
