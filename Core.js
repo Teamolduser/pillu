@@ -5917,7 +5917,7 @@ break
                                             "rows": [
                                                 {
                                                     "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× bot developer",
-                                                    "description": "Displays The pikachu-MD developer",
+                                                    "description": "ghost army",
                                                     "rowId": `huhu`
                                                 }
                                             ]
