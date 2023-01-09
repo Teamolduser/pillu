@@ -5936,7 +5936,7 @@ break
             const listMessage = {
 
              title: `✧────···[ Dashboard ]···─────✧`,
-              text: "Aww my baby ${pushname} you need help? 🥺❤️",
+              text: "Aww my baby ${pushname}  you need help? 🥺❤️",
            
               footer: `╭━━━━━━━━━━━━━━━━┈─✧
 ┴
