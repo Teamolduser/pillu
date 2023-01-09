@@ -5800,54 +5800,407 @@ if (isBanChat) return reply(mess.bangc)
 )}
 break
 
-case  'listmenu' : {
-		if (isBan) return reply(mess.banned)	 			
-    		if (isBanChat) return reply(mess.bangc)
-		let sections = []
-		let  nexusmenu = [`groupsetting`,`textpromenu`,`groupmenu`,`funmenu`,`downloadmenu`,`voicechangermenu`,`animemenu`]
-		let marin2 = [`groupsetting 😎 `,`𝐓𝐗𝐓-𝐈𝐌𝐆-𝐌𝐀𝐊𝐄𝐑 𝐌𝐄𝐍𝐔 🤯 `,`𝐎𝐍𝐋𝐘 𝐅𝐎𝐑 𝐆𝐑𝐎𝐔𝐏𝐀𝐃𝐌𝐈𝐍𝐒 🤖 `,`𝐅𝐎𝐑 𝐅𝐔𝐍 😁 `,`𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐌𝐄𝐍𝐔 😲`,`𝐂𝐇𝐀𝐍𝐆𝐄 𝐕𝐎𝐈𝐂𝐄 𝐎𝐅 𝐀𝐍𝐘 𝐀𝐔𝐃𝐈𝐎 😌 `,`𝐀𝐍𝐈𝐌𝐄 𝐌𝐄𝐍𝐔 🥴 `]
-		let ne = [` ONLY OWNER CAMMANDS`,`click TO GET TXT TO IMG MENU`,`TAP TO GET GROUPMENU`,`TAP TO GET FUNMENU`,`TAP TO GET DOWNLOADMENU`,`TAP TO GET VOICE CHANGER MENU`,`TAP TO GET ANIME MENU`]
-		let startnum = 0; let startnu = 0; let startn = 0;let start = 0
-                    let startnumm = 1
-                    for (let x of nexusmenu) {
-                        const yy = {title: `${marin2[startnum++]}`,
-                    rows: [
-                       {
-                        title: `${marin2[startnu++]}`,
-                        description: `${ne[0]}`,
-                        rowId: `${prefix}${x}`
-                      }
-                    ]
-                   }
-                        sections.push(yy)
-                    }
-                    const sendm =  A17.sendMessage(
-      from, 
-      {
-       text: "LIST MENU",
-       footer: `${BotName}`,
-       title: "CHECK THE MENU LIST......",
-       title: `\n╭╼━━━᚜ 𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× ᚛━━━╾╮
-│                                                 ❒
-🔥 *My prefix*       : ( ${prefix} )
-❤️ *My name*       : ${global.BotName}
-🥵 *User name*    : ${pushname}
-😻 *Bot speed*      : ${latensie.toFixed(4)} ms
-🐤 *Bot runtime*   : ${runtime(process.uptime())}
-❤️‍🔥 *Bot users*      : ${Object.keys(global.db.users).length}
-🎃 *Owner name* : ${global.OwnerName}
-🦊 *Owner num.*  : http://wa.me//${global.PermanentOwnerNumber}
-🍓 *Group name*  : ${groupMetadata.subject}
-│                                                 ❒
-╰╼━━━━━━━━━━━━━━━━╾╯\n\n_Tap here for *Full commands*_ 🐤👇\nㅤ`,
-       buttonText: "Click Button",
-       sections
-      }, { quoted : m }
-    )  
-}
-  
+
+ case 'command': case 'listmenu' : case 'list': case 'l' : {
+                const sections = [{
+                                            "title": "Initial Features 🛰🚀",
+                                            "rows": [
+                                                {
+                                                    "title": "Other ☕",
+                                                    "description": "Displays The List Of Other Features",
+                                                    "rowId": `${prefix}Othermenu`
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Bot Features ❤️",
+                                            "rows": [
+                                                {
+                                                    "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜×All Menu 🥀",
+                                                    "description": "Displays The List Of All The Features!",
+                                                    "rowId": `${prefix}allmenu`
+                                                },
+                                                {
+                                                    "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× Owner Menu 💠",
+                                                    "description": "Displays The List Of Owner Features",
+                                                    "rowId": `${prefix}ownermenu`
+                                                    },
+                                                {
+                                                    "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× text to speak ✨",
+                                                    "description": "use for convert text to voice .speak Ayush",
+                                                    "rowId": `${prefix}texttospeech`
+                                                    },
+                                                    {
+                                                    "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× Group couple🌈",
+                                                    "description": "find the Group couple here",
+                                                    "rowId": `${prefix}couple`
+                                                },
+                                                {
+                                                    "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× ⭕Group Menu⭕ ",
+                                                    "description": "Displays The List Of Group Features",
+                                                    "rowId": `${prefix}groupmenu`
+                                                },
+                                                {
+                                                    "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× Download Menu ↘️",
+                                                    "description": "Displays The List Of Download Features",
+                                                    "rowId": `${prefix}downloadmenu`
+                                                },
+                                                {
+                                                    "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜×  Essentials  ",
+                                                    "description": "Displays The List Of Sticker Features",
+                                                    "rowId": `${prefix}oppp`
+                                                },
+                                                {
+                                                    "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× Search Menu 🔎",
+                                                    "description": "Displays The List Of Searching Features",
+                                                    "rowId": `${prefix}searchmenu`
+                                                },
+                                                {
+                                                    "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× core menu🌆",
+                                                    "description": "Displays The List Of core Features",
+                                                    "rowId": `${prefix}coremenu`
+                                                },
+                                                {
+                                                    "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× Image Effect Menu 🖼️",
+                                                    "description": "Displays The List Of Image Effect Features",
+                                                    "rowId": `${prefix}imageeffectmenu`
+                                                },
+                                                    {
+                                                        "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× Anime Menu 😘",
+                                                    "description": "Displays The List Of Random Anime Features",
+                                                    "rowId": `${prefix}animemenu`
+                                                    },
+                                                    {
+                                                        "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× Emote Menu 😀",
+                                                    "description": "Displays The List Of Emote Features",
+                                                    "rowId": `${prefix}emotemenu`
+                                                    },
+                                                    {
+                                                    "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× Anime Sticker Menu ☺️",
+                                                    "description": "Displays The List Of Anime Sticker Features",
+                                                    "rowId": `${prefix}animestickermenu`
+                                                     },
+                                                {
+                                                    "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× Nsfw Menu 🤓",
+                                                    "description": "Displays The List Of Nsfe Features",
+                                                    "rowId": `${prefix}nsfwmenu`
+                                                     },
+                                                    {
+                                                        "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜×  Menu 🕺",
+                                                    "description": "Displays The List Of Fun Features",
+                                                    "rowId": `${prefix}funmenu`
+                                                    },
+                                                    {
+                                                    "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× Game Menu 🎮",
+                                                    "description": "Displays The List Of Game Features",
+                                                    "rowId": `${prefix}gamemenu`
+                                                },
+                                                    {
+                                                        "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× Convert Menu ⚒️",
+                                                    "description": "Displays The List Of Convert Features",
+                                                    "rowId": `${prefix}convertmenu`
+                                                    },
+                                                    {
+                                                        "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× Search Menu ⚒️",
+                                                    "description": "Displays The List Of Search Features",
+                                                    "rowId": `${prefix}searchmenu`
+                                                    },
+                                                    {
+                                                        "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× support 🌐",
+                                                    "description": "Displays The support link ",
+                                                    "rowId": `${prefix}support`
+                                                    }
+                                            ]
+                                        },
+                                        {
+                                            "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× about my ghost",
+                                            "rows": [
+                                                {
+                                                    "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× bot developer",
+                                                    "description": "Displays The pikachu-MD developer",
+                                                    "rowId": `huhu`
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Credit ©️",
+                                            "rows": [
+                                                {
+                                                    "title": "𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× Thanks To ❤️",
+                                                    "description": "Displays The List Of Credit Of The Bot !!",
+                                                    "rowId": `hjhj`
+                                                }
+                                            ]
+                                        }
+                                    ]
+            const listMessage = {
+
+             title: `✧────···[ Dashboard ]···─────✧`,
+              text: "Aww my baby ${pushname} you need help? 🥺❤️",
+           
+              footer: `╭━━━━━━━━━━━━━━━━┈─✧
+┴
+│⬡${ucapanWaktu}..
+│⬡𝗡𝗮𝗺𝗲 :${pushname} 
+│⬡𝗠𝘆 𝗽𝗿𝗲𝗳𝗶𝘅 𝗶𝘀 :${prefix}
+│⬡𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 : ${global.OwnerName}
+│⬡𝗕𝗼𝘁 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} ms 
+│⬡𝗧𝗼𝘁𝗮𝗹 𝗯𝗼𝘁 𝘂𝘀𝗲𝗿 : ${Object.keys(global.db.users).length} 
+│⬡𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : Linux 
+│⬡𝗧𝗶𝗺𝗲 : ${xtime} 
+┬
+├━━━━━━━━━━━━━━━━┈─⋆
+│ ▸𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺: https://www.instagram.com/i_a_m_ghost_/
+┴ ▸Owner: SHUBHAM
+✧
+┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
+│ Please don't spam bro
+╰━━━━━━━━━━━━━━━━┈─◂`,
+              buttonText: "🦋⃟✮͢ 𝑻𝒂𝒑 𝒉𝒆𝒓𝒆 ✮⃝❤️",
+              
+              sections
+            }
+            const sendMsg = await A17.sendMessage(m.chat, listMessage)
+            }
+            break
+
+            case 'coremenu' :{
+                if (isBan) return reply(mess.banned)	 			
+                if (isBanChat) return reply(mess.bangc)
+                 reply(`╭╼━᚜ 𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× ᚛━╾╮
+│                                      ❒
+│ *My prefix*       : ( ${prefix} )
+│ *My name*       : ${global.BotName}
+│ *User name*    : ${pushname}
+│ *Owner name* : ${global.OwnerName}
+│ *Owner no.*     : http://wa.me//${global.Owner}
+│ *Group name*  : ${groupMetadata.subject}
+│                                      ❒
+╰╼━━━━━━━━━━━━╾╯
+
+╭╼━᚜ 𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× ᚛━╾╮
+│
+│❒✨ ${prefix}A17
+│❒✨ ${prefix}listpc
+│❒✨ ${prefix}stalk
+│❒✨ ${prefix}profile
+│❒✨ ${prefix}delete
+│❒✨ ${prefix}deleteall
+│❒✨ ${prefix}listgc
+│❒✨ ${prefix}welcome
+│❒✨ ${prefix}support
+│❒✨ ${prefix}repo
+│❒✨ ${prefix}script
+│❒✨ ${prefix}help
+╰──────── ${global.BotName} ────────`
+
+                
+                )}
+                break
+                
+
+
+
+
+
+
+
+            case 'searchmenu' :{
+                if (isBan) return reply(mess.banned)	 			
+                if (isBanChat) return reply(mess.bangc)
+                 reply(`╭╼━᚜ 𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× ᚛━╾╮
+│ *My name*       : ${global.BotName}
+│ *User name*    : ${pushname}
+│ *My prefix*       : ( ${prefix} )
+│ *Owner name* : ${global.OwnerName}
+│ *Owner no.*     : http://wa.me//${global.Owner}
+│ *Group name*  : ${groupMetadata.subject}
+│                                      ❒
+╰╼━━━━━━━━━━━━╾╯
+                
+╭╼━᚜ 𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× ᚛━╾╮
+│❒✨ ${prefix}play
+│❒✨ ${prefix}ytmp3
+│❒✨ ${prefix}ytmp4
+│❒✨ ${prefix}yts
+│❒✨ ${prefix}lyrics
+│❒✨ ${prefix}movie
+│❒✨ ${prefix}google
+│❒✨ ${prefix}gimage
+│❒✨ ${prefix}pinterest
+│❒✨ ${prefix}image
+│❒✨ ${prefix}wallpaper
+│❒✨ ${prefix}searchgc
+│❒✨ ${prefix}happymod
+│❒✨ ${prefix}wikipedia
+│❒✨ ${prefix}ringtone
+│❒✨ ${prefix}anime
+│❒✨ ${prefix}animestory
+╰─────── ${global.BotName} ────────`
+                  
+              
+                )}
+                break
+                
+
+                case 'gamemenu' :{
+                    if (isBan) return reply(mess.banned)	 			
+                    if (isBanChat) return reply(mess.bangc)
+                     reply(`╭╼━᚜ 𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× ᚛━╾╮
+│                                      ❒
+│ *My prefix* : ( ${prefix} )
+│ *My name*  : ${global.BotName}
+│ *User name* : ${pushname}
+│ *Owner name* : ${global.OwnerName}
+│ *Owner no.*  : @917798203711
+│ *Group name* : ${groupMetadata.subject}
+│                     ❒
+╰╼━━━━━━━━━━━━╾╯
+
+╭╼━᚜ 𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× ᚛━╾╮
+│
+│❒✨ ${prefix}ttt
+│❒✨ ${prefix}dare
+│❒✨ ${prefix}truth
+│❒✨ ${prefix}casino
+╰───── ${global.BotName} ─────`) 
+    
+    
+        }
+    break
+    
+                 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            case 'othermenu' :{
+                if (isBan) return reply(mess.banned)	 			
+                if (isBanChat) return reply(mess.bangc)
+                 reply(`╭╼━᚜ 𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× ᚛━╾╮
+│                                      ❒
+│ *My prefix* : ( ${prefix} )
+│ *My name*  : ${global.BotName}
+│ *User name* : ${pushname}
+│ *Owner name* : ${global.OwnerName}
+│ *Owner no.*  : @917798203711
+│ *Group name* : ${groupMetadata.subject}
+│                     ❒
+╰╼━━━━━━━━━━━━╾╯
+╭╼━᚜ 𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× ᚛━╾╮
+│
+│❒✨ ${prefix}stickermeme
+│❒✨ ${prefix}say
+│❒✨ ${prefix}darkjoke 
+│❒✨ ${prefix}quotes
+╰───── ${global.BotName} ─────`) 
+
+
+    }
 break
 
+
+case 'oppp' :{
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+     reply(`╭╼━᚜ 𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× ᚛━╾╮
+│                                      ❒
+│ *My prefix* : ( ${prefix} )
+│ *My name*  : ${global.BotName}
+│ *User name* : ${pushname}
+│ *Owner name* : ${global.OwnerName}
+│ *Owner no.*  : @917798203711
+│ *Group name* : ${groupMetadata.subject}
+│                     ❒
+╰╼━━━━━━━━━━━━╾╯
+╭╼━᚜ 𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜× ᚛━╾╮
+│
+│❒✨ ${prefix}translate
+│❒✨ ${prefix}say
+│❒✨ ${prefix}fliptext
+│❒✨ ${prefix}toletter
+╰───── ${global.BotName} ─────`) 
+
+
+}
+break
+          
+                
+                
+case  'ownermenu' : {
+    if (isBan) return reply(mess.banned)	 			
+        if (isBanChat) return reply(mess.bangc)
+    if (!isCreator) return replay(mess.botowner)
+    let sections = []
+    let  nexusmenu = [`self on`,`public on`,`bangroup on`]
+    let  nexusmenu2 = [`self off`,`public off`,`bangroup off `]
+    let marin = [`self on/off`,`public on/off`,`bangroup on/off`]
+    let marin2 = [`SELF 𓆩😎𓆪 `,`PUBLIC𓆩😁𓆪 `,`BANGROUP𓆩😠𓆪 `]
+    let ne = [`ACTIVATE THIS COMMANDS`,`DEACTIVATE THIS COMMAND`]
+    let startnum = 0; let startnu = 0; let startn = 0;let start = 0
+                let startnumm = 1
+                for (let x of nexusmenu) {
+                    const yy = {title: `${marin[startnum++]}`,
+                rows: [
+                   {
+                    title: `${marin2[startnu++]}`,
+                    description: `${ne[0]}`,
+                    rowId: `${prefix}${x}`
+                  },{
+                    title: `${marin2[startn++]}`,
+                    description: `${ne[1]}`,
+                    rowId: `${prefix}${nexusmenu2[start++]}`
+                  }
+                ]
+               }
+                    sections.push(yy)
+                }
+                const sendm =  A17.sendMessage(
+  from, 
+  {
+   text: "OWNER Settings",
+   footer: `${BotName}`,
+   title: "Set your OWNER settings here......",
+   buttonText: "Click Button",
+   sections
+  }, { quoted : m }
+)  
+}
+break      		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 case 'animemenu' : {
 if (isBan) return reply(mess.banned)	 			
 if (isBanChat) return reply(mess.bangc)
