@@ -6499,257 +6499,13 @@ let buttons3 = [
 {buttonId: `${prefix}voicechangermenu`, buttonText: {displayText: '𝐂𝐇𝐀𝐍𝐆𝐄 𝐕𝐎𝐈𝐂𝐄'}, type: 1}]
 await A17.sendButtonText(m.chat, buttons, buttons2, buttons3)}
 break
+
 case 'allmenu':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
       
 const helpmenu = ` ${ucapanWaktu}...*${pushname}* Dear...!! ,
-
-│───────────────────│
-││▸ Iam Ghost 👻
-││▸ Group :${groupMetadata.subject}
-│───────────────────│
-│╭────────────────···▸
-┠─────═[ *TODAY* ]═────
-│╰────────────────···▸
-│╭────────────────···▸
-┴│▸
-⬡│▸ *Time* : ${xtime}
-┬│▸ *Date* : ${xdate}
-│╰────────────────···▸
-┠───═[ *BOT INFO* ]═──▸
-│╭────────────────···▸
-┴│▸ 
-⬡│▸ *Bot usr name :* ${pushname} 
-⬡│▸ *My prefix is :*  ${prefix}
-⬡│▸ *Owner name :* ${global.OwnerName} 
-⬡│▸ *Bot speed :* ${latensie.toFixed(4)} ms 
-⬡│▸ *Bot runtime :* ${runtime(process.uptime())} 
-⬡│▸ *Total Bot user :* ${Object.keys(global.db.users).length}
-⬡│▸ *Platform :* Linux 
-┬│▸
-│╰────────────────···▸
-┠⬡│▸ Here's the list of my Commands.
-│╭────────────────···▸
-│╰────────────────···▸
-┠─━━〈 ⚙️ *Core* ⚙️ 〉━━
-│╭────────────────···▸
-┴│▸ 
-⬡│▸ speak, A17, stalk
-⬡│▸ profile, delete
-⬡│▸ deleteall, listgc, listpc
-⬡│▸ welcome, support
-⬡│▸ repo, script, help
-┬│▸
-╰────────────────···▸
-┠━━〈 ❤️‍🔥 *Owner* ❤️‍🔥 〉━━
-│╭───────────────···▸
-┴│▸
-⬡│▸ self, public,join,
-⬡│▸ bangroup, ban, block, 
-⬡│▸ unblock, broadcast, bye
-┬│▸
-╰────────────────···▸
-┠━━〈 ⭕ *Group* ⭕ 〉━━
-│╭───────────────···▸
-┴│▸
-⬡│▸ add, remove, tagall
-⬡│▸ promote, demote, revoke
-⬡│▸ hidetag, groupsetting 
-⬡│▸ grouplink, setgcpp
-⬡│▸ setname, setdesc
-⬡│▸ group, nsfw, nsnfwmenu
-┬│▸
-╰────────────────···▸
-┠━━〈 ❗ *Anti Link ❗* 〉━━
-│╭───────────────···▸
-┴│▸
-⬡│▸ antilinkgc, antilinktg
-⬡│▸ antilinktt, antilinkytch
-⬡│▸ antilinkytvid, antilinkig
-⬡│▸ antilinkfb, antilinktwit
-⬡│▸ antilinkall, antiwame
-┬│▸
-╰────────────────···▸
-┠━━〈 🔍 *Search* 🔎 〉━━
-│╭───────────────···▸
-┴│▸
-⬡│▸ play, ytmp3, ytmp4 
-⬡│▸ yts, lyrics, movie
-⬡│▸ google, gimage, pinterest
-⬡│▸ image, wallpaper
-⬡│▸ searchgc, happymod
-⬡│▸ wikimedia, ringtone
-⬡│▸ anime, animestory
-⬡│▸ manga, ringtone
-┬│▸
-╰────────────────···▸
-┠━━〈 🛠️ *Convert* 🛠️ 〉━━
-│╭───────────────···▸
-┴│▸
-⬡│▸ sticker, toimg, tovideo
-⬡│▸ togif, steal, stickermeme
-⬡│▸ emojimix, tourl, tomp3, toaudio
-┬│▸
-╰────────────────···▸
-┠━━〈 🎼 *Audio* 🎼 〉━━
-│╭───────────────···▸
-┴│▸ 
-⬡│▸ bass, tempo, blown,
-⬡│▸ robot, slow, squirrel
-⬡│▸ deep, earrape, fast,
-⬡│▸ fat, nightcore, reverse,
-┬│▸
-╰────────────────···▸
-┠━━〈 📍 *Reactions* 📍 〉━━
-│╭───────────────···▸
-┴│▸  
-⬡│▸ cuddle, hug, kiss, 
-⬡│▸ bonk, cry, bully,
-⬡│▸ slap, kill, happy,
-⬡│▸ lick, pat, smug,
-⬡│▸ nom, glomp, bite,
-⬡│▸ yeet, blush, smile,
-⬡│▸ wave, highfive, handhold,
-⬡│▸ wink, poke, dance, cringe
-┬│▸
-╰────────────────···▸
-┠━━〈 🌌 *Downloader* 🌌 〉━━
-│╭───────────────···▸
-┴│▸
-⬡│▸ ytvideo, mediafire, instagram,
-⬡│▸ igtv, facebook, fbmp3,
-⬡│▸ twitter, twittermp3,
-⬡│▸ tiktok, tiktokaudio
-⬡│▸ tiktoknowm, mediafire  
-┬│▸
-╰────────────────···▸
-┠━━〈 ⚒️ *IMG-TXT-MAKER* ⚒️ 〉━━
-│╭───────────────···▸
-┴│▸ 
-⬡│▸ candy, christmas, wood
-⬡│▸ Dchristmas, neondevil
-⬡│▸ sparklechristmas, ice 
-⬡│▸ scifi, deepsea, neondevil
-⬡│▸ waterpipe, rainbow
-⬡│▸ pencil, spooky, spooky
-⬡│▸ discovery, metalic
-⬡│▸ fiction, demon, snow
-⬡│▸ transformar, berry
-⬡│▸ Magma, thunder, fruitjuice
-⬡│▸ 3Dstone, neonlight
-⬡│▸ harrypotter, glitch
-⬡│▸ broken, glass, papercut
-⬡│▸ watercolour, multicolour
-⬡│▸ underwater, lava, rock
-⬡│▸ joker, wicker, firework
-⬡│▸ graffitibike, chocolate
-⬡│▸ bloodglas, dropwater
-⬡│▸ strawberry, matrix
-⬡│▸ skeleton, blackpink
-⬡│▸ sand, glue, 1917
-⬡│▸ blood, hallowe, toxic
-⬡│▸ neondevil, cloud, honey
-┬│▸
-╰────────────────···▸
-┠━━〈 🎐 *Fun* 🎐 〉━━
-│╭───────────────···▸
-┴│▸
-⬡│▸ reaction, truth, dare
-⬡│▸ couple, soulmate, 
-⬡│▸handsomecheck,
-⬡│▸ beautifulcheck, 
-⬡│▸ greatcheck, gaycheck, 
-⬡│▸ cutecheck, awesomecheck
-⬡│▸ handsomecheck,
-⬡│▸ uglycheck, charactercheck
-⬡│▸ lesbiancheck, hornycheck,
-⬡│▸ prettycheck, lovelycheck,
-┬│▸
-╰────────────────···▸
-┠━━〈 🈴 fun menu 🈴 〉━━
-│╭───────────────···▸
-⬡│▸ stupit, foolish
-⬡│▸ smart, idiot, gay
-⬡│▸ lesbi, bastsrd, dog
-⬡│▸ stubble, fuck, ape
-⬡│▸ noob, grreat, horny
-⬡│▸ wibu, asshole, cute
-⬡│▸ handsome, kind, ugly
-⬡│▸ pretty, lesbian, kala
-⬡│▸ randi, gandu, gora
-⬡│▸ madarchod, chutiya
-⬡│▸ nibba, nibbi, 
-⬡│▸ bhosdiwala, chutmarika
-⬡│▸ bokachoda, muthal
-⬡│▸ muthbaz, randbaz, hot
-⬡│▸ badk, nigga, mamu
-⬡│▸ nets, dope, lit
-⬡│▸ dumbass, boka, saxy
-⬡│▸ bal, playboy, mf
-⬡│▸ fuckboy, fuckgurl
-⬡│▸ hot, loda, lund
-⬡│▸
-┬│▸
-╰────────────────···▸
-┠━━〈 🈴 *Weeb* 🈴 〉━━
-│╭───────────────···▸
-┴│▸
-⬡│▸ crosplay, waifu, loli,
-⬡│▸ tickle, wallpaper, coffee,
-⬡│▸ neko, ppcouple, feed,
-⬡│▸ foxgirl, feed, meow,
-⬡│▸ animenom, waifu3, neko2,
-⬡│▸ feed, meow, tickle, migumin
-⬡│▸ awoo, animewallpaper2
-⬡│▸ anime, manga
-┬│▸
-╰────────────────···▸
-┠━━〈 ♨️ games  ♨️ 〉━━
-│╭───────────────···▸
-┴│▸
-⬡│▸ ttt,
-⬡│▸ casino
-┬│▸ truth, dare
-╰────────────────···▸
-┠━━〈 ♨️ *Informative* ♨️ 〉━━
-│╭───────────────···▸
-┴│▸
-⬡│▸ animequote, quote, weather
-⬡│▸ covid, earthquake, wiki
-┬│▸
-╰────────────────···▸
-━━〈 🪁 *Essentials* 🪁 〉━━
-│╭───────────────···▸
-┴│▸
-⬡│▸ qr, say, translate, 
-⬡│▸ fliptext, toletter
-┬│▸
-╰────────────────···▸
-┠━━〈 🎗 *Others* 🎗 〉━━
-│╭───────────────···▸
-┴│▸
-⬡│▸ stickermeme, quotes,
-⬡│▸ Report, darkjoke, afk
-┬│▸
-╰────────────────···▸
-┠━━〈 ⚠️ *NSFW* ⚠️ 〉━━
-│╭───────────────···▸
-┴│▸
-⬡│▸ 🍁 Type " *${prefix}nsfw* " then enable NSFW (Admin only!) 
-⬡│▸
-⬡│▸ 🍁 Then type " *${prefix}nsfwmenu* " for all NSFW commands.
-⬡│▸
-⬡│▸
-⬡│▸ 『  *${global.BotName}*  』
-⬡│▸    Developed By: *Shubham*
-⬡│▸
-⬡│▸ 🌹 To use any of these commands type 
-⬡│▸ " *${prefix}<Command name>* ".
-⬡│▸
-⬡│▸ 🌹 To get Support Group link type " *${prefix}support* ".
-⬡│▸
-⬡│▸ 🌹 Type " *${prefix}help* " to get full command list.`
+.`
     
 
  let buttonshelpm = [
@@ -6760,7 +6516,800 @@ const helpmenu = ` ${ucapanWaktu}...*${pushname}* Dear...!! ,
                 let buttonMessage = {
                     video:fs.readFileSync('./system/A17_2.mp4'),gifPlayback:true,
                     caption: helpmenu,
-                    footer: `${BotName}`,
+                    footer: `╭╼━━᚜  𓄂⍣⃝🇬𝚑𝚘𝚜𝚝 ×͜×  ᚛╾ᐧᐧᐧᐧ⳹
+❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
+┊➥ ${pushname} 
+┝
+🔥 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝘂𝘀𝗲𝗿𝘀 :
+┊➥ ${Object.keys(global.db.users).length}
+┝
+🍓 𝗕𝗼𝘁 𝗿𝘂𝗻𝘁𝗶𝗺𝗲 :
+┊➥ ${runtime(process.uptime())} 
+┝
+🥵 𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 :
+┊➥ shubham
+┝
+🎃 𝗚𝗿𝗼𝘂𝗽 :
+┊➥ ${groupMetadata.subject}
+╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
+
+╭───『 𝘾𝞗𝞛𝞛𝞓𝞜𝘿𝙎 』──❖
+╽
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃----- ᴍᴇɴᴜ -----✯
+┃┗┯━━━━━━━━━━━━◆
+┠┬┤
+┃│ ❒✗ ,allmenu
+┃│ ❒✗ ,listmenu
+┃│ ❒✗ ,coremenu
+┃│ ❒✗ ,ownermenu
+┃│ ❒✗ ,groupmenu
+┃│ ❒✗ ,antilinkmenu
+┃│ ❒✗ ,textpromenu
+┃│ ❒✗ ,downloadmenu
+┃│ ❒✗ ,searchmenu
+┃│ ❒✗ ,wallpapermenu
+┃│ ❒✗ ,animewallmenu
+┃│ ❒✗ ,convertermenu
+┃│ ❒✗ ,audiomenu
+┃│ ❒✗ ,photoeffectsmenu 
+┃│ ❒✗ ,imagemenu
+┃│ ❒✗ ,emotesmenu
+┃│ ❒✗ ,weebemnu
+┃│ ❒✗ ,stickermenu
+┃│ ❒✗ ,animestickermenu
+┃│ ❒✗ ,funmenu
+┃│ ❒✗ ,funmenu2
+┃│ ❒✗ ,gamemenu
+┃│ ❒✗ ,anonymousmenu
+┃│ ❒✗ ,toolsmenu
+┃│ ❒✗ ,nsfwmenu
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃----- ᴄᴏʀᴇ -----✯
+┃┗┯━━━━━━━━━━━━◆
+┠┬┤
+┃│ ❒✗ ,alive (Bot working?)
+┃│ ❒✗ ,say
+┃│ ❒✗ ,repo
+┃│ ❒✗ ,support
+┃│ ❒✗ ,restart
+┃│ ❒✗ ,time
+┃│ ❒✗ ,date
+┃│ ❒✗ ,weather 
+┃│ ❒✗ ,afk
+┃│ ❒✗ ,chatinfo
+┃│ ❒✗ ,script
+┃│ ❒✗ ,speedtest
+┃│ ❒✗ ,ping
+┃│ ❒✗ ,owner
+┃│ ❒✗ ,developers
+┃│ ❒✗ ,Menu
+┃│ ❒✗ ,delete
+┃│ ❒✗ ,chatinfo
+┃│ ❒✗ ,listpc
+┃│ ❒✗ ,listgc
+┃│ ❒✗ ,request
+┃│ ❒✗ ,report
+┃│ ❒✗ ,setcmd
+┃│ ❒✗ ,listcmd
+┃│ ❒✗ ,delcmd
+┃│ ❒✗ ,lockcmd
+┃│ ❒✗ ,addmsg
+┃│ ❒✗ ,listmsg
+┃│ ❒✗ ,getmsg
+┃│ ❒✗ ,delmsg
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃----- ᴏᴡɴᴇʀ -----✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,self
+┃│ ❒✗ ,public
+┃│ ❒✗ ,antitag
+┃│ ❒✗ ,RentBot
+┃│ ❒✗ ,Rentlist
+┃│ ❒✗ ,ban
+┃│ ❒✗ ,banchat
+┃│ ❒✗ ,deletethis
+┃│ ❒✗ ,join
+┃│ ❒✗ ,leavegc
+┃│ ❒✗ ,setbio
+┃│ ❒✗ ,bcgroup
+┃│ ❒✗ ,bcall
+┃│ ❒✗ ,bcimage
+┃│ ❒✗ ,bcvideo
+┃│ ❒✗ ,bcaudio
+┃│ ❒✗ ,bclocation
+┃│ ❒✗ ,setppbot
+┃│ ❒✗ ,setexif
+┃│ ❒✗ ,block
+┃│ ❒✗ ,unblock
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃---- ɢʀᴏᴜᴘ ----✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,groupsetting
+┃│ ❒✗ ,grouplink
+┃│ ❒✗ ,ephemeral
+┃│ ❒✗ ,setgcpp
+┃│ ❒✗ ,setname (group)
+┃│ ❒✗ ,setdesc
+┃│ ❒✗ ,group 
+┃│ ❒✗ ,resetgrouplink
+┃│ ❒✗ ,editinfo
+┃│ ❒✗ ,add
+┃│ ❒✗ ,remove
+┃│ ❒✗ ,remove-me
+┃│ ❒✗ ,safety
+┃│ ❒✗ ,group-safety 
+┃│ ❒✗ ,developers
+┃│ ❒✗ ,hidetag
+┃│ ❒✗ ,tagall
+┃│ ❒✗ ,antivirus
+┃│ ❒✗ ,antitoxic
+┃│ ❒✗ ,autoreply
+┃│ ❒✗ ,promote
+┃│ ❒✗ ,demote
+┃│ ❒✗ ,react (emoji)
+┃│ ❒✗ ,vote
+┃│ ❒✗ ,devote
+┃│ ❒✗ ,upvote
+┃│ ❒✗ ,checkvote
+┃│ ❒✗ ,delvote
+┃│ ❒✗ ,couplepp
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃--- ᴀɴᴛɪʟɪɴᴋ ---✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,antiwame
+┃│ ❒✗ ,antilinkgc
+┃│ ❒✗ ,antilinktg
+┃│ ❒✗ ,antilinktt
+┃│ ❒✗ ,antilinkytch
+┃│ ❒✗ ,antilinkytvid (video)
+┃│ ❒✗ ,antilinkig
+┃│ ❒✗ ,antilinkfb
+┃│ ❒✗ ,antilinktwitter
+┃│ ❒✗ ,antilinkall
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃--- ᴛᴇxᴛ ᴍᴀᴋᴇʀ ---✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,candy
+┃│ ❒✗ ,blackpinkneon
+┃│ ❒✗ ,deepsea
+┃│ ❒✗ ,scifi
+┃│ ❒✗ ,fiction
+┃│ ❒✗ ,berry
+┃│ ❒✗ ,fruitjuice
+┃│ ❒✗ ,biscuit
+┃│ ❒✗ ,wood
+┃│ ❒✗ ,chocolate
+┃│ ❒✗ ,matrix
+┃│ ❒✗ ,blood
+┃│ ❒✗ ,halloween
+┃│ ❒✗ ,wicker
+┃│ ❒✗ ,darkgold
+┃│ ❒✗ ,firework
+┃│ ❒✗ ,skeleton
+┃│ ❒✗ ,sand
+┃│ ❒✗ ,glue
+┃│ ❒✗ ,leaves
+┃│ ❒✗ ,magma
+┃│ ❒✗ ,lava
+┃│ ❒✗ ,rock
+┃│ ❒✗ ,bloodglas
+┃│ ❒✗ ,underwater
+┃│ ❒✗ ,textmaker
+┃│ ❒✗ ,honey
+┃│ ❒✗ ,ice
+┃│ ❒✗ ,watercolor
+┃│ ❒✗ ,multicolor
+┃│ ❒✗ ,snow
+┃│ ❒✗ ,harrypot
+┃│ ❒✗ ,harrypotter
+┃│ ❒✗ ,brokenglass
+┃│ ❒✗ ,waterpipe
+┃│ ❒✗ ,spooky
+┃│ ❒✗ ,circuit
+┃│ ❒✗ ,metalic
+┃│ ❒✗ ,demon
+┃│ ❒✗ ,sparklechristmas
+┃│ ❒✗ ,Christmas
+┃│ ❒✗ ,3Dchristmas
+┃│ ❒✗ ,3Dbox
+┃│ ❒✗ ,waterdrop
+┃│ ❒✗ ,lion2
+┃│ ❒✗ ,papercut
+┃│ ❒✗ ,transformer
+┃│ ❒✗ ,neondevil
+┃│ ❒✗ ,3Davengers
+┃│ ❒✗ ,3Dstone
+┃│ ❒✗ ,3Dstone2
+┃│ ❒✗ ,summertime
+┃│ ❒✗ ,thunder
+┃│ ❒✗ ,window
+┃│ ❒✗ ,graffiti
+┃│ ❒✗ ,graffitibike
+┃│ ❒✗ ,pornhub
+┃│ ❒✗ ,glitch
+┃│ ❒✗ ,glitch2
+┃│ ❒✗ ,glitch3
+┃│ ❒✗ ,blackpink
+┃│ ❒✗ ,3Dspace
+┃│ ❒✗ ,lion
+┃│ ❒✗ ,3Dneon
+┃│ ❒✗ ,greenneon
+┃│ ❒✗ ,bokeh
+┃│ ❒✗ ,holographic
+┃│ ❒✗ ,bear
+┃│ ❒✗ ,wolf
+┃│ ❒✗ ,joker
+┃│ ❒✗ ,dropwater
+┃│ ❒✗ ,dropwater2
+┃│ ❒✗ ,thewall
+┃│ ❒✗ ,neonlight
+┃│ ❒✗ ,natural
+┃│ ❒✗ ,carbon
+┃│ ❒✗ ,pencil
+┃│ ❒✗ ,blackpink2
+┃│ ❒✗ ,neon
+┃│ ❒✗ ,neonlight2
+┃│ ❒✗ ,toxic
+┃│ ❒✗ ,strawberry 
+┃│ ❒✗ ,discovery
+┃│ ❒✗ ,1917
+┃│ ❒✗ ,sci_fi
+┃│ ❒✗ ,ancient
+┃│ ❒✗ ,fabric
+┃│ ❒✗ ,horror
+┃│ ❒✗ ,whitebear
+┃│ ❒✗ ,juice
+┃│ ❒✗ ,batman
+┃│ ❒✗ ,multicolor
+┃│ ❒✗ ,collwall
+┃│ ❒✗ ,wonder
+┃│ ❒✗ ,cool
+┃│ ❒✗ ,sketch
+┃│ ❒✗ ,marvel
+┃│ ❒✗ ,foggy
+┃│ ❒✗ ,writing
+┃│ ❒✗ ,Halloweenfire
+┃│ ❒✗ ,classic
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃--- ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ---✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,instagram
+┃│ ❒✗ ,instagramreels
+┃│ ❒✗ ,igtv
+┃│ ❒✗ ,igstory
+┃│ ❒✗ ,facebook
+┃│ ❒✗ ,fbmp3
+┃│ ❒✗ ,twitter
+┃│ ❒✗ ,twittermp3 
+┃│ ❒✗ ,tiktok
+┃│ ❒✗ ,tiktokaudio
+┃│ ❒✗ ,tiktoknown
+┃│ ❒✗ ,mediafire
+┃│ ❒✗ ,ytmp3
+┃│ ❒✗ ,ytmp4
+┃│ ❒✗ ,getmusic
+┃│ ❒✗ ,getvudeo
+┃│ ❒✗ ,gitclone
+┃│ ❒✗ ,soundcloud
+┃│ ❒✗ ,zippyshare
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃---- sᴇᴀʀᴄʜ ----✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,play
+┃│ ❒✗ ,song
+┃│ ❒✗ ,yts
+┃│ ❒✗ ,lyrics
+┃│ ❒✗ ,google
+┃│ ❒✗ ,playstore
+┃│ ❒✗ ,gimage
+┃│ ❒✗ ,pinterest
+┃│ ❒✗ ,image
+┃│ ❒✗ ,film
+┃│ ❒✗ ,wallpaper
+┃│ ❒✗ ,seachgc
+┃│ ❒✗ ,happymod
+┃│ ❒✗ ,tvsearch
+┃│ ❒✗ ,wikimedia
+┃│ ❒✗ ,ytsearch
+┃│ ❒✗ ,ringtone
+┃│ ❒✗ ,webtoon
+┃│ ❒✗ ,anime
+┃│ ❒✗ ,animestory
+┃│ ❒✗ ,manga
+┃│ ❒✗ ,wattpad
+┃│ ❒✗ ,covid
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃--- ᴡᴀʟʟᴘᴀᴘᴇʀ ---✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,wallpaper (any)
+┃│ ❒✗ ,wallpaper pubg
+┃│ ❒✗ ,wallpaper BTS
+┃│ ❒✗ ,wallpaper anime
+┃│ ❒✗ ,wallpaper freefire
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃--- ᴀɴɪᴍᴇ ᴡᴀʟʟ ---✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,wallpaper (any)
+┃│ ❒✗ ,wallpaper pubg
+┃│ ❒✗ ,wallpaper BTS
+┃│ ❒✗ ,wallpaper anime
+┃│ ❒✗ ,wallpaper freefire
+┃│ ❒✗ ,wallpaper Anya
+┃│ ❒✗ ,wallpaper Naruto
+┃│ ❒✗ ,wallpaper Sasuke
+┃│ ❒✗ ,wallpaper Hancock
+┃│ ❒✗ ,wallpaper Kakashi  
+┃│ ❒✗ ,wallpaper Sakura  
+┃│ ❒✗ ,wallpaper itachi  
+┃│ ❒✗ ,wallpaper Obito  
+┃│ ❒✗ ,wallpaper Madara  
+┃│ ❒✗ ,wallpaper shisui  
+┃│ ❒✗ ,wallpaper boruto  
+┃│ ❒✗ ,wallpaper hinata  
+┃│ ❒✗ ,wallpaper neji  
+┃│ ❒✗ ,wallpaper Ino  
+┃│ ❒✗ ,wallpaper Shikamaru  
+┃│ ❒✗ ,wallpaper might  
+┃│ ❒✗ ,wallpaper rock lee
+┃│ ❒✗ ,wallpaper haku
+┃│ ❒✗ ,wallpaper zabuza
+┃│ ❒✗ ,wallpaper kisame  
+┃│ ❒✗ ,wallpaper Sasori 
+┃│ ❒✗ ,wallpaper Deidara 
+┃│ ❒✗ ,wallpaper zetsu
+┃│ ❒✗ ,wallpaper konan
+┃│ ❒✗ ,wallpaper jiraya 
+┃│ ❒✗ ,wallpaper Tsunade 
+┃│ ❒✗ ,wallpaper Orochimaru 
+┃│ ❒✗ ,wallpaper Hashirama  
+┃│ ❒✗ ,wallpaper Tobirama  
+┃│ ❒✗ ,wallpaper Hiruzen  
+┃│ ❒✗ ,wallpaper Minato  
+┃│ ❒✗ ,wallpaper mizuhara 
+┃│ ❒✗ ,wallpaper killer bee
+┃│ ❒✗ ,wallpaper karin  
+┃│ ❒✗ ,wallpaper hidan
+┃│ ❒✗ ,wallpaper nagato  
+┃│ ❒✗ ,wallpaper yahiko 
+┃│ ❒✗ ,wallpaper pain
+┃│ ❒✗ ,wallpaper indra
+┃│ ❒✗ ,wallpaper Ashura 
+┃│ ❒✗ ,wallpaper Hagoromo 
+┃│ ❒✗ ,wallpaper asuma
+┃│ ❒✗ ,wallpaper kurenai
+┃│ ❒✗ ,wallpaper konohamaru  
+┃│ ❒✗ ,wallpaper marin  
+┃│ ❒✗ ,wallpaper asuka
+┃│ ❒✗ ,wallpaper Ken Kaneki 
+┃│ ❒✗ ,wallpaper Midoriya 
+┃│ ❒✗ ,wallpaper Shoto 
+┃│ ❒✗ ,wallpaper coby
+┃│ ❒✗ ,wallpaper gaara
+┃│ ❒✗ ,wallpaper temari
+┃│ ❒✗ ,wallpaper kurama
+┃│ ❒✗ ,wallpaper goku 
+┃│ ❒✗ ,wallpaper vegeta
+┃│ ❒✗ ,wallpaper Gohan
+┃│ ❒✗ ,wallpaper trunks
+┃│ ❒✗ ,wallpaper piccolo 
+┃│ ❒✗ ,wallpaper Gotenks 
+┃│ ❒✗ ,wallpaper cell
+┃│ ❒✗ ,wallpaper bulma
+┃│ ❒✗ ,wallpaper chi chi 
+┃│ ❒✗ ,wallpaper goten
+┃│ ❒✗ ,wallpaper videl
+┃│ ❒✗ ,wallpaper pan
+┃│ ❒✗ ,wallpaper krillin 
+┃│ ❒✗ ,wallpaper frieza
+┃│ ❒✗ ,wallpaper one piece
+┃│ ❒✗ ,wallpaper sanji
+┃│ ❒✗ ,wallpaper zoro
+┃│ ❒✗ ,wallpaper nami
+┃│ ❒✗ ,wallpaper nico robin 
+┃│ ❒✗ ,wallpaper tony tony chopper
+┃│ ❒✗ ,wallpaper usopp
+┃│ ❒✗ ,wallpaper portgas D Ace
+┃│ ❒✗ ,wallpaper Monkey D Dragon
+┃│ ❒✗ ,wallpaper Monkey D Garp
+┃│ ❒✗ ,wallpaper Gol D  Roger
+┃│ ❒✗ ,wallpaper whitebeard 
+┃│ ❒✗ ,wallpaper marco the phoenix 
+┃│ ❒✗ ,wallpaper sabo
+┃│ ❒✗ ,wallpaper Buggy D Clown
+┃│ ❒✗ ,wallpaper Princess Vivi
+┃│ ❒✗ ,wallpaper kaido
+┃│ ❒✗ ,wallpaper Shanks 
+┃│ ❒✗ ,wallpaper Brook
+┃│ ❒✗ ,wallpaper Trafalgar D water Law 
+┃│ ❒✗ ,wallpaper captain kid
+┃│ ❒✗ ,wallpaper killer
+┃│ ❒✗ ,wallpaper yamato
+┃│ ❒✗ ,wallpaper Dr vegapunk
+┃│ ❒✗ ,wallpaper ben beckman
+┃│ ❒✗ ,wallpaper Silvers reighley 
+┃│ ❒✗ ,wallpaper Princess 
+┃│ ❒✗ ,wallpaper pudding
+┃│ ❒✗ ,wallpaper katakuri
+┃│ ❒✗ ,wallpaper viola
+┃│ ❒✗ ,wallpaper marshall d teach 
+┃│ ❒✗ ,wallpaper doflamingo 
+┃│ ❒✗ ,wallpaper corazan
+┃│ ❒✗ ,wallpaper baby 5
+┃│ ❒✗ ,wallpaper rebecca
+┃│ ❒✗ ,wallpaper attack on titan 
+┃│ ❒✗ ,wallpaper eren Yeager 
+┃│ ❒✗ ,wallpaper Levi  
+┃│ ❒✗ ,wallpaper Mikasa  
+┃│ ❒✗ ,wallpaper Erwin 
+┃│ ❒✗ ,wallpaper Hange
+┃│ ❒✗ ,wallpaper shasha
+┃│ ❒✗ ,wallpaper armin arlert
+┃│ ❒✗ ,wallpaper krista lenz
+┃│ ❒✗ ,wallpaper connie springer
+┃│ ❒✗ ,wallpaper ymir
+┃│ ❒✗ ,wallpaper Annie Leonhart 
+┃│ ❒✗ ,wallpaper Reiner hoover
+┃│ ❒✗ ,wallpaper zeke jaeger
+┃│ ❒✗ ,wallpaper death note
+┃│ ❒✗ ,wallpaper Yagami light
+┃│ ❒✗ ,wallpaper L Lawliet 
+┃│ ❒✗ ,wallpaper Misa misa
+┃│ ❒✗ ,wallpaper ryuk
+┃│ ❒✗ ,wallpaper near
+┃│ ❒✗ ,wallpaper mello
+┃│ ❒✗ ,wallpaper mikami
+┃│ ❒✗ ,wallpaper Naomi Misora 
+┃│ ❒✗ ,wallpaper rem
+┃│ ❒✗ ,wallpaper Demon slayer 
+┃│ ❒✗ ,wallpaper Zenitsu 
+┃│ ❒✗ ,wallpaper Tanjiro 
+┃│ ❒✗ ,wallpaper Nezuko 
+┃│ ❒✗ ,wallpaper rengoku 
+┃│ ❒✗ ,wallpaper Giyu 
+┃│ ❒✗ ,wallpaper Muichiro 
+┃│ ❒✗ ,wallpaper Shinobu 
+┃│ ❒✗ ,wallpaper Sanemi 
+┃│ ❒✗ ,wallpaper Obanai 
+┃│ ❒✗ ,wallpaper Mitsuri 
+┃│ ❒✗ ,wallpaper Gyomei 
+┃│ ❒✗ ,wallpaper Uzui Tengen 
+┃│ ❒✗ ,wallpaper muzan 
+┃│ ❒✗ ,wallpaper akaza
+┃│ ❒✗ ,wallpaper douma
+┃│ ❒✗ ,wallpaper Kokushibo 
+┃│ ❒✗ ,wallpaper yorrichi 
+┃│ ❒✗ ,wallpaper kanao
+┃│ ❒✗ ,wallpaper jujutsu kaisen 
+┃│ ❒✗ ,wallpaper gojo  
+┃│ ❒✗ ,wallpaper Yuji Itadori 
+┃│ ❒✗ ,wallpaper mighumi  
+┃│ ❒✗ ,wallpaper kogisaki  
+┃│ ❒✗ ,wallpaper yuta  
+┃│ ❒✗ ,wallpaper Geto 
+┃│ ❒✗ ,wallpaper sukuna
+┃│ ❒✗ ,wallpaper Toge  
+┃│ ❒✗ ,wallpaper Maki  
+┃│ ❒✗ ,wallpaper kento 
+┃│ ❒✗ ,wallpaper todo
+┃│ ❒✗ ,wallpaper Sakura  
+┃│ ❒✗ ,wallpaper Mitsuri 
+┃│ ❒✗ ,wallpaper taki
+┃│ ❒✗ ,wallpaper Hina 
+┃│ ❒✗ ,wallpaper Tokyo revengers 
+┃│ ❒✗ ,wallpaper Nahoya 
+┃│ ❒✗ ,wallpaper Shuji 
+┃│ ❒✗ ,wallpaper Hinata 
+┃│ ❒✗ ,wallpaper Kazutora 
+┃│ ❒✗ ,wallpaper Takashi 
+┃│ ❒✗ ,wallpaper Takemichi 
+┃│ ❒✗ ,wallpaper Keisuke 
+┃│ ❒✗ ,wallpaper Draken
+┃│ ❒✗ ,wallpaper Chifuyu 
+┃│ ❒✗ ,wallpaper Mikey
+┃│ ❒✗ ,wallpaper Yor
+┃│ ❒✗ ,wallpaper Loid
+┃│ ❒✗ ,wallpaper Saitama
+┃│ ❒✗ ,wallpaper Tatsumaki
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃--- ᴄᴏɴᴠᴇʀᴛᴇʀ ---✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,toimg
+┃│ ❒✗ ,sticker
+┃│ ❒✗ ,toviewonce
+┃│ ❒✗ ,readmore
+┃│ ❒✗ ,take
+┃│ ❒✗ ,smeme
+┃│ ❒✗ ,emoji
+┃│ ❒✗ ,tovideo
+┃│ ❒✗ ,togif
+┃│ ❒✗ ,tourl
+┃│ ❒✗ ,toVN
+┃│ ❒✗ ,tomo3
+┃│ ❒✗ ,toaudio
+┃│ ❒✗ ,Enbnary
+┃│ ❒✗ ,Dbinary 
+┃│ ❒✗ ,tinyurl
+┃│ ❒✗ ,styletext
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃---- ᴀᴜᴅɪᴏ ----✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,volume
+┃│ ❒✗ ,tempo
+┃│ ❒✗ ,bass
+┃│ ❒✗ ,blown
+┃│ ❒✗ ,deep
+┃│ ❒✗ ,earrape
+┃│ ❒✗ ,fast
+┃│ ❒✗ ,fat
+┃│ ❒✗ ,nightcore
+┃│ ❒✗ ,reverse
+┃│ ❒✗ ,robot
+┃│ ❒✗ ,slow
+┃│ ❒✗ ,squirrel
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃-- ᴘʜᴏᴛᴏ ᴇғғᴇᴄᴛs --✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,wanted
+┃│ ❒✗ ,blur
+┃│ ❒✗ ,framed 
+┃│ ❒✗ ,gayeffect
+┃│ ❒✗ ,imagessketch
+┃│ ❒✗ ,invert
+┃│ ❒✗ ,burn
+┃│ ❒✗ ,triggeredwebp
+┃│ ❒✗ ,shit
+┃│ ❒✗ ,rip
+┃│ ❒✗ ,jail
+┃│ ❒✗ ,beutifuleffect
+┃│ ❒✗ ,deleteeffect
+┃│ ❒✗ ,pixelate
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃----- ɪᴍᴀɢᴇ -----✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,coffee 
+┃│ ❒✗ ,BTS
+┃│ ❒✗ ,woof
+┃│ ❒✗ ,meow
+┃│ ❒✗ ,lizard
+┃│ ❒✗ ,8ball
+┃│ ❒✗ ,goose
+┃│ ❒✗ ,avatar
+┃│ ❒✗ ,tickle
+┃│ ❒✗ ,gecg
+┃│ ❒✗ ,feed
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃----- ᴇᴍᴏᴛᴇs -----✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,Instagramemoji 
+┃│ ❒✗ ,facebookemoji
+┃│ ❒✗ ,iphoneemoji
+┃│ ❒✗ ,samsungemoji
+┃│ ❒✗ ,joyemoji
+┃│ ❒✗ ,skypeemoji
+┃│ ❒✗ ,twitteremoji
+┃│ ❒✗ ,whatsappemoji
+┃│ ❒✗ ,microsoftemoji
+┃│ ❒✗ ,googleemoji
+┃│ ❒✗ ,pediaemoji
+┃│ ❒✗ ,microsoftemoji
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃----- ᴡᴇᴇʙ -----✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,naruto
+┃│ ❒✗ ,yaoi
+┃│ ❒✗ ,neko2
+┃│ ❒✗ ,waifu
+┃│ ❒✗ ,waifu-face
+┃│ ❒✗ ,awoo
+┃│ ❒✗ ,awoo2
+┃│ ❒✗ ,shinobu
+┃│ ❒✗ ,waifu-face
+┃│ ❒✗ ,foxgirl
+┃│ ❒✗ ,megumin2
+┃│ ❒✗ ,loli
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃--- sᴛɪᴄᴋᴇʀ ---✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,patrick
+┃│ ❒✗ ,emoji
+┃│ ❒✗ ,emojimix
+┃│ ❒✗ ,attp
+┃│ ❒✗ ,ttp  (text)
+┃│ ❒✗ ,lovesticker
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃--- ʀᴇᴀᴄᴛɪᴏɴ ---✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,bully
+┃│ ❒✗ ,cuddle
+┃│ ❒✗ ,cry
+┃│ ❒✗ ,hug
+┃│ ❒✗ ,awoo-sticker
+┃│ ❒✗ ,kiss
+┃│ ❒✗ ,lick
+┃│ ❒✗ ,pat
+┃│ ❒✗ ,smug
+┃│ ❒✗ ,bonk
+┃│ ❒✗ ,yeet
+┃│ ❒✗ ,blush
+┃│ ❒✗ ,smile
+┃│ ❒✗ ,wave
+┃│ ❒✗ ,highfive
+┃│ ❒✗ ,handhold
+┃│ ❒✗ ,nom
+┃│ ❒✗ ,glomp
+┃│ ❒✗ ,bite
+┃│ ❒✗ ,slap
+┃│ ❒✗ ,kick
+┃│ ❒✗ ,kill
+┃│ ❒✗ ,happy
+┃│ ❒✗ ,wink
+┃│ ❒✗ ,poke
+┃│ ❒✗ ,dance
+┃│ ❒✗ ,cringe
+┃│ ❒✗ ,neko
+┃│ ❒✗ ,gura
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃-- ᴀɴɪᴍᴇ sᴛɪᴄᴋᴇʀ --✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,animenom
+┃│ ❒✗ ,animeslap
+┃│ ❒✗ ,animespank
+┃│ ❒✗ ,animepat
+┃│ ❒✗ ,animeneko
+┃│ ❒✗ ,animekiss
+┃│ ❒✗ ,animewlp
+┃│ ❒✗ ,animecuddle
+┃│ ❒✗ ,animecry
+┃│ ❒✗ ,animekill
+┃│ ❒✗ ,animelick
+┃│ ❒✗ ,animebite
+┃│ ❒✗ ,animeyeet
+┃│ ❒✗ ,animebully
+┃│ ❒✗ ,animebonk
+┃│ ❒✗ ,animewink
+┃│ ❒✗ ,animepoke
+┃│ ❒✗ ,animesmile
+┃│ ❒✗ ,animewave
+┃│ ❒✗ ,animeawoo
+┃│ ❒✗ ,animeblush
+┃│ ❒✗ ,animesmug
+┃│ ❒✗ ,animeglomp
+┃│ ❒✗ ,animehappt
+┃│ ❒✗ ,animedance
+┃│ ❒✗ ,animecringe
+┃│ ❒✗ ,animehighfive
+┃│ ❒✗ ,animehandhold
+┃│ ❒✗ ,animemegumin
+┃│ ❒✗ ,smug2
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃------ ғᴜɴ ------✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,rate (Text)
+┃│ ❒✗ ,beautifulcheck
+┃│ ❒✗ ,awesomecheck
+┃│ ❒✗ ,prettycheck
+┃│ ❒✗ ,lesbiancheck
+┃│ ❒✗ ,gaycheck
+┃│ ❒✗ ,cutecheck
+┃│ ❒✗ ,uglycheck
+┃│ ❒✗ ,hornycheck
+┃│ ❒✗ ,charactercheck 
+┃│ ❒✗ ,lovelycheck
+┃│ ❒✗ ,murderercheck
+┃│ ❒✗ ,chutiyacheck 
+┃│ ❒✗ ,dethcheck
+┃│ ❒✗ ,couple
+┃│ ❒✗ ,mysoulmate
+┃│ ❒✗ ,hot
+┃│ ❒✗ ,sexy
+┃│ ❒✗ ,kind
+┃│ ❒✗ ,idiot
+┃│ ❒✗ ,handsome
+┃│ ❒✗ ,beautiful 
+┃│ ❒✗ ,cute
+┃│ ❒✗ ,pretty
+┃│ ❒✗ ,lesbian
+┃│ ❒✗ ,noob
+┃│ ❒✗ ,bastard
+┃│
+┃│ ••Type 𝗙𝘂𝗻𝗺𝗲𝗻𝘂𝟮 for more••
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃----- ɢᴀᴍᴇs -----✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,truth
+┃│ ❒✗ ,dare
+┃│ ❒✗ ,tictactoe
+┃│ ❒✗ ,delttt
+┃│ ❒✗ ,guess  (𝙾𝚙𝚝𝚒𝚘𝚗)
+┃│ ❒✗ ,math
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃-- ᴀɴᴏɴʏᴍᴏᴜs --✯
+┃┗┯━━━━━━━━━━━━◆		
+┠┬┤
+┃│ ❒✗ ,anonymous 
+┃│ ❒✗ ,start
+┃│ ❒✗ ,next
+┃│ ❒✗ ,leave
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃----- ᴛᴏᴏʟs -----✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ,translate
+┃│ ❒✗ ,fliptext 
+┃│ ❒✗ ,toletter  (number)
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ ❃----- ɴsғᴡ -----✯
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│❒✗ ,nsfw
+┃│❒✗ ,nsfwmenu 
+┗┷━━━━━━━━━━━━╾ᐧᐧᐧᐧ༻`,
                     buttons: buttonshelpm,
                     headerType: 4
                     
@@ -6768,7 +7317,11 @@ const helpmenu = ` ${ucapanWaktu}...*${pushname}* Dear...!! ,
             A17.sendMessage(m.chat, buttonMessage,{ quoted:m })
                 }
 break
- 
+		
+		
+		
+		
+		
 
 case '':
     if(isCmd){
@@ -6813,7 +7366,7 @@ case '':
                 }
 break
 
-case 'menu':
+case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?':
     if(isCmd){
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
@@ -6821,7 +7374,20 @@ case 'menu':
       A17pic ='https://wallpapercave.com/wp/wp10524580.jpg'
     
 const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || false     
- const needhelpmenu = `┏─────────────────⬣
+ const needhelpmenu = `
+`
+
+
+     
+         let butRun = [
+                {buttonId: `.allmenu`, buttonText: {displayText: 'menu'}, type: 1},
+		{buttonId: `.listmenu`, buttonText: {displayText: 'all menu'}, type: 1},
+                {buttonId: `.owner`, buttonText: {displayText: 'owner of this saxy bot'}, type: 1},
+                ]
+                let buttonMessage = {
+                    video:fs.readFileSync('./system/A17.mp4'),gifPlayback:true,
+                    caption: needhelpmenu,
+                    footer: `┏─────────────────⬣
  ┆ 𝑯𝒂𝒊, ${ucapanWaktu} ${pushname}
  ┗┬──────────────┈ ⳹
  ┏┤ Bot Info
@@ -6848,26 +7414,13 @@ const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') 
  ┆┗──────────────┈ ⳹
  ┆𝗗𝗮𝘁𝗲 : ${xdate}
  ┆𝗧𝗶𝗺𝗲 : ${xtime}
- ┗─────────────────⬣
-`
-     
-         let butRun = [
-                {buttonId: `.allmenu`, buttonText: {displayText: 'menu'}, type: 1},
-		{buttonId: `.listmenu`, buttonText: {displayText: 'all menu'}, type: 1},
-                {buttonId: `.owner`, buttonText: {displayText: 'owner of this saxy bot'}, type: 1},
-                ]
-                let buttonMessage = {
-                    video:fs.readFileSync('./system/A17.mp4'),gifPlayback:true,
-                    caption: needhelpmenu,
-                    footer: `${global.BotName}`,
+ ┗─────────────────⬣`,
                     buttons: butRun,
                     headerType: 4
                 }
             A17.sendMessage(m.chat,buttonMessage,{quoted:m})
                 }
 break
-
-
 
 
 case 'A17': case '17': 
