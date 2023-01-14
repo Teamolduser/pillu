@@ -7366,27 +7366,21 @@ case '':
                 }
 break
 
-case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?':
-    if(isCmd){
+case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
-
-      A17pic ='https://wallpapercave.com/wp/wp10524580.jpg'
+      
+const helpmenu = ` `
     
-const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || false     
- const needhelpmenu = `
-`
 
-
-     
-         let butRun = [
-                {buttonId: `.allmenu`, buttonText: {displayText: 'menu'}, type: 1},
-		{buttonId: `.listmenu`, buttonText: {displayText: 'all menu'}, type: 1},
-                {buttonId: `.owner`, buttonText: {displayText: 'owner of this saxy bot'}, type: 1},
-                ]
+ let buttonshelpm = [
+    {buttonId: `.owner`, buttonText: {displayText: '✨ Bot Owner ✨'}, type: 1},
+    {buttonId: `.nsfw`, buttonText: {displayText: '🥵nsfw💦'}, type: 1},
+    {buttonId: `.listmenu`, buttonText: {displayText: '🔥 List Menu 🔥'}, type: 1}
+    ]
                 let buttonMessage = {
-                    video:fs.readFileSync('./system/A17.mp4'),gifPlayback:true,
-                    caption: needhelpmenu,
+                    video:fs.readFileSync('./system/A17_2.mp4'),gifPlayback:true,
+                    caption: helpmenu,
                     footer: `┏─────────────────⬣
  ┆ 𝑯𝒂𝒊, ${ucapanWaktu} ${pushname}
  ┗┬──────────────┈ ⳹
@@ -7407,21 +7401,25 @@ const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') 
  ┆┗──────────────┈ ⳹ 
  ┆♠︎ 𝗡𝗮𝗺𝗲 : ${pushname}
  │♠︎ 𝗡𝘂𝗺𝗯𝗲𝗿 :@917798203711
- │♠︎ 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 :${isPremium ? '✅' : `❌`}
- │♠︎ 𝗟𝗶𝗺𝗶𝘁 :${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`} 
+ │♠︎ 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 :'✅'
+ │♠︎ 𝗟𝗶𝗺𝗶𝘁 :'♾Infinity'
  ┗┬──────────────┈ ⳹
  ┏┤ Calender
  ┆┗──────────────┈ ⳹
  ┆𝗗𝗮𝘁𝗲 : ${xdate}
  ┆𝗧𝗶𝗺𝗲 : ${xtime}
  ┗─────────────────⬣`,
-                    buttons: butRun,
+                    buttons: buttonshelpm,
                     headerType: 4
+                    
                 }
-            A17.sendMessage(m.chat,buttonMessage,{quoted:m})
+            A17.sendMessage(m.chat, buttonMessage,{ quoted:m })
                 }
 break
-
+		
+		
+		
+	
 
 case 'A17': case '17': 
 		
